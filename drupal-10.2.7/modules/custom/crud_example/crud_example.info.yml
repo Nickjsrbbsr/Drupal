@@ -1,0 +1,7 @@
+name: 'CRUD Example'
+type: module
+description: 'A custom module to perform CRUD operations with password validation.'
+core_version_requirement: ^8 || ^9
+package: Custom
+dependencies:
+  - drupal:user

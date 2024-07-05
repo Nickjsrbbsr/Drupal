@@ -1,0 +1,38 @@
+my_crud_module.create:
+  path: '/my-crud/create'
+  defaults:
+    _controller: '\Drupal\my_crud_module\Controller\CrudController::createEntry'
+    _title: 'Create Entry'
+  requirements:
+    _permission: 'access content'
+
+my_crud_module.read:
+  path: '/my-crud/read/{id}'
+  defaults:
+    _controller: '\Drupal\my_crud_module\Controller\CrudController::readEntry'
+    _title: 'Read Entry'
+  requirements:
+    _permission: 'access content'
+my_crud_module.readAll:
+  path: '/my-crud/read'
+  defaults:
+    _controller: '\Drupal\my_crud_module\Controller\CrudController::readAll'
+    _title: 'Read All Bro!!'
+  requirements:
+    _permission: 'access content'
+
+my_crud_module.update:
+  path: '/my-crud/update/{id}'
+  defaults:
+    _controller: '\Drupal\my_crud_module\Controller\CrudController::updateEntry'
+    _title: 'Update Entry'
+  requirements:
+    _permission: 'access content'
+
+my_crud_module.delete:
+  path: '/my-crud/delete/{id}'
+  defaults:
+    _controller: '\Drupal\my_crud_module\Controller\CrudController::deleteEntry'
+    _title: 'Delete Entry'
+  requirements:
+    _permission: 'access content'

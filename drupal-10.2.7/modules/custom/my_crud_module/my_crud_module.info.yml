@@ -1,0 +1,6 @@
+name: My Crud Module
+type: module
+# title: My Modules
+description: "A module to perform CRUD operations on a custom database table."
+core_version_requirement: ^10 || ^11
+package: Custom

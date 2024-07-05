@@ -1,0 +1,4 @@
+name: Fake Store
+type: module
+description: Fake Store API
+core_version_requirement: ^10 || ^11

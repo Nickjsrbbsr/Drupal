@@ -1,0 +1,7 @@
+fake_store.product:
+  path: '/fake-store/product/{id}'
+  defaults:
+    _controller: '\Drupal\fake_store\Controller\ApiController::getProduct'
+    _title: 'Fake Store Product'
+  requirements:
+    _permission: 'access content'

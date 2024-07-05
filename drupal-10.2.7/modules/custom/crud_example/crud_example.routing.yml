@@ -1,0 +1,39 @@
+crud_example.add:
+  path: '/crud/add'
+  defaults:
+    _controller: '\Drupal\crud_example\Controller\CrudController::add'
+    _title: 'Add Entry'
+  requirements:
+    _permission: 'access content'
+
+crud_example.view:
+  path: '/crud/view'
+  defaults:
+    _controller: '\Drupal\crud_example\Controller\CrudController::view'
+    _title: 'View Entries'
+  requirements:
+    _permission: 'access content'
+
+crud_example.update:
+  path: '/crud/update/{id}'
+  defaults:
+    _controller: '\Drupal\crud_example\Controller\CrudController::update'
+    _title: 'Update Entry'
+  requirements:
+    _permission: 'access content'
+
+crud_example.delete:
+  path: '/crud/delete/{id}'
+  defaults:
+    _controller: '\Drupal\crud_example\Controller\CrudController::delete'
+    _title: 'Delete Entry'
+  requirements:
+    _permission: 'access content'
+
+crud_example.fetch:
+  path: '/crud/fetch'
+  defaults:
+    _controller: '\Drupal\crud_example\Controller\CrudController::fetch'
+    _title: 'Fetch Data'
+  requirements:
+    _permission: 'access content'

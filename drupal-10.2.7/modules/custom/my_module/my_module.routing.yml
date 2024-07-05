@@ -1,0 +1,9 @@
+my_module.api:
+  path: '/api'
+  defaults:
+    _controller: '\Drupal\my_module\Controller\ApiController::get'
+    _title: 'My Module API'
+  requirements:
+    _permission: 'access my_module api'
+  methods: [GET]
+

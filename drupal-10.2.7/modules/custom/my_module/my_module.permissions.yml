@@ -1,0 +1,4 @@
+access my_module api:
+  title: 'Access My Module API'
+  description: 'Permission to access the My Module API.'
+  restrict access: TRUE

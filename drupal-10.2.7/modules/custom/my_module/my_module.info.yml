@@ -1,0 +1,6 @@
+name: My Module
+type: module
+# title: My Modules
+description: My Modules
+core_version_requirement: ^10 || ^11
+package: Custom

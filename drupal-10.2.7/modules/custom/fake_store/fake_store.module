@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function fake_store_theme() {
+  return [
+    'fake_store_product' => [
+      'variables' => [
+        'id' => NULL,
+        'title' => NULL,
+        'price' => NULL,
+        'description' => NULL,
+        'category' => NULL,
+        'image' => NULL,
+      ],
+      'template' => 'fake-store-product',
+    ],
+  ];
+}
